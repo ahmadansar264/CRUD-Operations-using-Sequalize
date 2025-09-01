@@ -1,0 +1,24 @@
+{
+  "name": "crud-operations-using-sequalize",
+  "version": "1.0.0",
+  "description": "basic crud operation to practice sequalize",
+  "homepage": "https://github.com/ahmadansar264/CRUD-Operations-using-Sequalize#readme",
+  "bugs": {
+    "url": "https://github.com/ahmadansar264/CRUD-Operations-using-Sequalize/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmadansar264/CRUD-Operations-using-Sequalize.git"
+  },
+  "license": "ISC",
+  "author": "Ansar Ahmad",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "node": "^22.19.0"
+  }
+}
