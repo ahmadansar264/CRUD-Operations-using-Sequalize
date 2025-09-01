@@ -3,10 +3,10 @@ import { Sequelize } from "sequelize";
 const connectDb = async () => {
     try {
         const sequelize = new Sequelize({
-            username: "neondb_owner",
-            password: "npg_ahFR39ICSWEl",
-            database: "neondb",
-            host: "ep-lingering-thunder-a1qia13p-pooler.ap-southeast-1.aws.neon.tech",
+            username: process.env.PGUSER,
+            password: process.env.PGPASSWORD,
+            database: process.env.PGDATABASE,
+            host: process.env.PGHOST,
             dialect: "postgres",
             dialectOptions: {
                 ssl: {
