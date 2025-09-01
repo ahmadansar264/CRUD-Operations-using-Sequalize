@@ -1,8 +1,6 @@
 import { Sequelize } from "sequelize";
 
-const connectDb = async () => {
-    try {
-        const sequelize = new Sequelize({
+const sequelize = new Sequelize({
             username: process.env.PGUSER,
             password: process.env.PGPASSWORD,
             database: process.env.PGDATABASE,
@@ -17,12 +15,13 @@ const connectDb = async () => {
             logging: false,
         });
 
+export default sequelize;
 
+export const connectDb = async () => {
+    try {
         await sequelize.authenticate();
         console.log("Connection has been established successfully.");
     } catch (error) {
         console.error("Unable to connect to the database:", error);
     }
-
 }
-export default connectDb;
